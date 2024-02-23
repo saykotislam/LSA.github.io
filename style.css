@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  font-family: 'Bangla', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('bg.jpg'); /* Replace 'background.jpg' with your image file */
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #ffffff;
+  color: #081e70;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  flex: 1;
+  text-align: center; /* Optionally center the text within the available space */
+}
+
+
+.container {
+  flex: 1;
+  padding: 20px;
+  width: 600px; /* Set a fixed width */
+  height: 400px; /* Set a fixed height */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: auto; /* Add overflow for content scrolling if needed */
+}
+
+
+#quiz {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  max-width: 600px; /* Set a maximum width for the quiz container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.question {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  height: 100px;
+  overflow: hidden;
+  color: #081e70; /* Color for the question */
+}
+
+#footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* Change flex direction to column */
+}
+
+.option {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000000; /* Color for the option text */
+  font-size: large;
+}
+
+.option:hover {
+  background-color: #c2c3ff;
+}
+
+#timer, #question-number {
+  font-weight: bold;
+  color: #081e70;
+  font-size: 40px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+
+  }
+}
+
+@media (max-width: 2000px) {
+  #footer {
+    flex-direction: row; /* Revert to row direction for smaller screens */
+    align-items: center; /* Align items vertically */
+  }
+}
